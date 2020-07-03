@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import { Carousel } from 'element-ui';
 import App from './App.vue';
 import './registerServiceWorker';
 import router from './router';
@@ -7,7 +8,9 @@ import Nav from '@/components/Nav.vue';
 import Layout from '@/components/Layout.vue';
 import Icon from '@/components/Icon.vue';
 
+
 Vue.config.productionTip = false;
+Vue.use(Carousel);
 
 Vue.component('Nav', Nav);
 Vue.component('Layout', Layout);

@@ -3,7 +3,7 @@ import VueRouter from 'vue-router';
 import Money from '@/views/Money.vue';
 import Statistics from '@/views/Statistics.vue';
 import NotFound from '@/views/NotFound.vue';
-import Chart from '@/views/Chart.vue';
+import Details from '@/views/Details.vue';
 
 Vue.use(VueRouter);
 
@@ -17,8 +17,8 @@ const routes = [
     component: Money
   },
   {
-    path: '/chart',
-    component: Chart
+    path: '/details',
+    component: Details
   },
   {
     path: '/statistics',
