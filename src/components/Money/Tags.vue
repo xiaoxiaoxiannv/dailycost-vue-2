@@ -10,8 +10,13 @@
 <script lang="ts">
     import Vue from 'vue';
     import {Component} from 'vue-property-decorator';
+    import {Carousel} from 'ant-design-vue';
 
-    @Component
+    @Component({
+        components: {"a-carousel": Carousel}
+    })
+
+
     export default class Tags extends Vue{
       onChange(a, b, c) {
         console.log(a, b, c);
