@@ -6,7 +6,9 @@ import store from './store';
 import Nav from '@/components/Nav.vue';
 import Layout from '@/components/Layout.vue';
 import Icon from '@/components/Icon.vue';
+import { Carousel } from 'ant-design-vue';
 
+Vue.use(Carousel);
 
 Vue.config.productionTip = false;
 
