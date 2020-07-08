@@ -1,8 +1,8 @@
 <template>
     <swiper class="swiper" :options="swiperOption">
         <swiper-slide>
-            <div class="tags1">
-                <ul class="current1">
+            <div class="tags">
+                <ul class="current">
                     <li class="item-selected">
                         <Icon name="personal"/>
                         个人
@@ -47,8 +47,8 @@
             </div>
         </swiper-slide>
         <swiper-slide>
-            <div class="tags2">
-                <ul class="current2">
+            <div class="tags">
+                <ul class="current">
                     <li class="item-selected">
                         <Icon name="App Store"/>
                         App Srote
@@ -128,56 +128,24 @@
     .swiper {
         display: flex;
         flex-grow: 1;
+        max-width: 100%;
         //justify-content: center;
         //align-items: center;
         //text-align: center;
-        .tags1 {
+        .tags {
             font-size: 12px;
             padding: 10px;
             position: relative;
             justify-content: center;
             align-items: center;
 
-            > .current1 {
+            > .current {
                 display: flex;
                 flex-wrap: wrap;
 
                 > li {
                     display: flex;
                     //justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                    padding: 10px 10px;
-                    width: 20%;
-                    color: rgb(122, 135, 151);
-
-                    &.item-selected {
-                        background: rgb(253, 245, 208);
-                    }
-                }
-
-                .icon {
-                    width: 2em;
-                    height: 2em;
-                    fill: rgb(122, 135, 151);
-                }
-            }
-        }
-
-        .tags2 {
-            font-size: 12px;
-            padding: 10px;
-            position: relative;
-            justify-content: center;
-            align-self: center;
-
-            > .current2 {
-                display: flex;
-                flex-wrap: wrap;
-
-                > li {
-                    display: flex;
-                    justify-content: center;
                     align-items: center;
                     flex-direction: column;
                     padding: 10px 10px;
